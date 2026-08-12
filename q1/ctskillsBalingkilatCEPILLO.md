@@ -63,3 +63,9 @@ graph TD
     L -- YES --> N[Lock Selection & Proceed to Dispense]
     N --> Z
 ```
+
+
+---
+
+## Step 5: Reflection/Explanation
+By decomposing the complex "Smart Vending Machine" issue into smaller sub-problems, we were able to isolate individual points of defect. Breaking down a massive, overwhelming problem into smaller, bite-sized tasks made designing targeted solutions much easier and allowed us to build an efficient, step-by-step logic flow without getting lost in overall system complexity.
