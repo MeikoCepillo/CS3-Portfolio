@@ -36,4 +36,25 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 ## Step 4: Pseudocode for Selected Sub-Problem
 
 ### **Selected Sub-Problem:** Item Selection & Change Calculation
-
+```mermaid
+graph TD
+    A([START]) --> B[Display: Select Item]
+    B --> C[/Read SelectedItem/]
+    C --> D{Is Item in Stock?}
+    D -- No --> E[Display: Out of Stock]
+    E --> END([END])   
+    D -- Yes --> F[Display Price & Request Payment]
+    F --> G[/Read InsertedMoney/]
+    G --> H{InsertedMoney >= ItemPrice?}  
+    H -- No --> I[Display: Insufficient Payment]
+    I --> J[Refund Money]
+    J --> END  
+    H -- Yes --> K[Display: Confirm Purchase?]
+    K --> L{User Choice?} 
+    L -- No --> J
+    L -- Yes --> M[Calculate Change = InsertedMoney - ItemPrice]
+    M --> N[Dispense Item & Dispense Change]
+    N --> O[Update Inventory Count]
+    O --> P[Display: Thank You!]
+    P --> END
+```
