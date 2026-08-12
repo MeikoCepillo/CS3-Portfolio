@@ -38,40 +38,28 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 ### **Selected Sub-Problem:** Item Selection & Change Calculation
 ```mermaid
 graph TD
-    A([START: Student Approaches]) --> B[Display: Welcome! Enter Item Code]
-    B --> C[/Read Keypad / Touch Input/]
+    A([START]) --> B[Display: Welcome! Enter Item Code]
+    B --> C[/Read Keypad Input/]
     C --> D{Is Item Code Valid?}
     
-    D -- No --> E[Display: Invalid Code. Try Again]
+    D -- No --> E[Display: Invalid Code. Try Again.]
     E --> B
     
-    D -- Yes --> F[Fetch Item Details: Name, Price, Stock]
+    D -- Yes --> F[Fetch Item Details: Name, Image, Price, Stock]
     F --> G{Is Item In Stock?}
     
     G -- No --> H[Display: Out of Stock!]
-    H --> I{Select another item?}
+    H --> I{Select Another Item?}
     I -- Yes --> B
-    I -- No --> Z([END])
+    I -- No --> Z([END: Session Cancelled])
     
-    G -- Yes --> J[Display Preview: Item Name & Price]
-    J --> K[Prompt: 'Confirm Selection? Yes / No / Change']
-    K --> L[/Read User Decision/]
+    G -- Yes --> J[Display Preview: Item Name, Price & Details]
+    J --> K[Prompt: Confirm Selection? YES / NO]
+    K --> L[/Read User Input/]
     
-    L -- Change / No --> M[Display: Selection Cancelled]
+    L -- NO --> M[Display: Selection Cancelled]
     M --> I
     
-    L -- Yes --> N[Display: Please Insert Payment]
-    N --> O[/Read Inserted Cash/]
-    O --> P{Payment >= Price?}
-    
-    P -- No --> Q[Display: Insufficient Funds]
-    Q --> R[Prompt: Insert More Cash or Cancel?]
-    R -- Insert More --> N
-    R -- Cancel --> S[Refund Payment] --> Z
-    
-    P -- Yes --> T[Calculate Change = Payment - Price]
-    T --> U[Dispense Selected Item]
-    U --> V[Dispense Change]
-    V --> W[Display: Thank You!]
-    W --> Z
+    L -- YES --> N[Lock Selection & Proceed to Dispense]
+    N --> Z
 ```
