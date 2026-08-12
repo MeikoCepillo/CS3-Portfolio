@@ -26,20 +26,20 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 
 | Sub-Problem | CT Skill | Example Solution |
 | :--- | :--- | :--- |
-| **1. Incorrect Change** | **Algorithm Design** | Write a precise logic routine: $\text{Change} = \text{Amount Paid} - \text{Item Cost}$. Verify available bills/coins in the hopper before accepting payment, then dispense exact change. |
-| **2. Lack of Inventory Tracking** | **Pattern Recognition / Data Processing** | Track stock counts using inventory sensors. When an item count reaches 0, automatically display "Out of Stock" on screen and send a notification to the supplier/staff. |
-| **3. User Slection Errors** | **Abstraction** | Simplify the user interface by adding a screen preview with a confirmation prompt before charging the user. |
-| **4. Transaction Efficiency** | **Decomposition** | Break down the checkout sequence into parallel processes so hardware checks run concurrently rather than sequentially. |
+| **1. Incorrect Change** | **Algorithmic Thinking** | Implement an automated change calculation routine that checks hopper coin levels before validating payment and dispenses exact currency combinations using standard change-making algorithms. |
+| **2. Lack of Inventory Tracking** | **Pattern Recognition** | Connect item slot weight/optical sensors to an online database to update stock levels in real time, lock empty slots automatically, and alert school canteen staff when stock falls below 15%. |
+| **3. User Selection Errors** | **Abstraction** | Replace the traditional keypad with a touch-screen display that shows item images, descriptions, and a final visual "Confirm Choice" prompt before initiating the purchase. |
+| **4. Transaction Efficiency** | **Decomposition** | Implement quick digital payment integrations (like RFID/student ID cards) and run sensor checks in parallel to minimize queuing times during peak school breaks. |
 
 ---
 
 ## Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
 
-### **Selected Sub-Problem:** Item Selection & Change Calculation
+### **Selected Sub-Problem:** User Selection Errors
 ```mermaid
 graph TD
     A([START]) --> B[Display: Welcome! Enter Item Code]
-    B --> C[/Read Keypad Input/]
+    B --> C[/Read Touch Input/]
     C --> D{Is Item Code Valid?}
     
     D -- No --> E[Display: Invalid Code. Try Again.]
@@ -51,7 +51,7 @@ graph TD
     G -- No --> H[Display: Out of Stock!]
     H --> I{Select Another Item?}
     I -- Yes --> B
-    I -- No --> Z([END: Session Cancelled])
+    I -- No --> Z([END])
     
     G -- Yes --> J[Display Preview: Item Name, Price & Details]
     J --> K[Prompt: Confirm Selection? YES / NO]
