@@ -18,7 +18,7 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 1. **Incorrect Change:** The machine miscalculates or fails to dispense the accurate change to its users.
 2. **Lack of Inventory Tracking:** Items run out without notifying staff or updating the display, causing the users to attempt to buy out-of-stock items.
 3. **User Selection Errors:** Users frequently press the wrong buttons, resulting in purchasing unintended items.
-4. **Transaction Latency:** The system processes requests slowly during peak usage times when multiple users use it consecutively.
+4. **Transaction Efficiency:** The system processes requests slowly during peak usage times when multiple users use it consecutively.
 
 ---
 
