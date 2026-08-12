@@ -33,7 +33,7 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 
 ---
 
-## Step 4: Pseudocode for Selected Sub-Problem
+## Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
 
 ### **Selected Sub-Problem:** Item Selection & Change Calculation
 ```mermaid
