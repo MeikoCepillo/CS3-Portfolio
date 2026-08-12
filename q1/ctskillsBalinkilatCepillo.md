@@ -27,9 +27,9 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 | Sub-Problem | CT Skill | Example Solution |
 | :--- | :--- | :--- |
 | **1. Incorrect Change** | **Algorithm Design** | Write a precise logic routine: $\text{Change} = \text{Amount Paid} - \text{Item Cost}$. Verify available bills/coins in the hopper before accepting payment, then dispense exact change. |
-| **2. Unnotified Out-of-Stock Items** | **Pattern Recognition / Data Processing** | Track stock counts using inventory sensors. When an item count reaches 0, automatically display "Out of Stock" on screen and send a notification to the supplier/staff. |
-| **3. Accidental Item Selection** | **Abstraction** | Simplify the user interface by adding a screen preview with a confirmation prompt (e.g., *"You selected Item A: [Yes/No]"*) before charging the user. |
-| **4. Slow Performance** | **Decomposition** | Break down the checkout sequence into parallel processes so hardware checks (coin validation, dispenser initialization) run concurrently rather than sequentially. |
+| **2. Lack of Inventory Tracking** | **Pattern Recognition / Data Processing** | Track stock counts using inventory sensors. When an item count reaches 0, automatically display "Out of Stock" on screen and send a notification to the supplier/staff. |
+| **3. User Slection Errors** | **Abstraction** | Simplify the user interface by adding a screen preview with a confirmation prompt before charging the user. |
+| **4. Transaction Efficiency** | **Decomposition** | Break down the checkout sequence into parallel processes so hardware checks run concurrently rather than sequentially. |
 
 ---
 
