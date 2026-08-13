@@ -22,6 +22,7 @@ graph TD
   C --> D{/Did the customer buy more than one item?/}
   D --> No -->E[Simply log the item bought into the spreadsheet.]
   E --> F([END)]
+
   D --> Yes --> G[Take into account how the quantity of each item/s the customer bought into spreadsheet]
   G --> H[Log into the spreadsheet]
   H --> F[END])
