@@ -17,7 +17,7 @@ Possible subproblems:
 
 ```mermaid
 graph TD
-  A([start]) --> B[Sub-problem; Cashiers cannot monitor items that need restocking]
+  A([START]) --> B[Sub-problem; Cashiers cannot monitor items that need restocking]
   B --> C[/Sell item/s to customer/]
   C --> D{/Did the customer buy more than one item?/}
   D --> No -->E[Simply log the item bought into the spreadsheet.]
