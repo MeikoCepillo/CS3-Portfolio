@@ -66,7 +66,8 @@ graph TD
     L -- YES --> N[Lock Selection & Proceed to Dispense]
     N --> Z
 ```
-
+# If it does not render:
+![Flowchart](Flowchart.PNG)
 
 ---
 
