@@ -17,13 +17,13 @@ Possible subproblems:
 
 ```mermaid
 graph TD
-  A([START]) --> B[Sub-problem; Cashiers cannot monitor items that need restocking]
-  B --> C[/Sell item/s to customer/]
-  C --> D{/Did the customer buy more than one item?/}
-  D -- No -->E[Simply log the item bought into the spreadsheet.]
-  E --> F([END)]
+  A([START]) --> B[Sub-problem; Cashiers cannot monitor items that need restocking] 
+  B --> C[/Sell item/s to customer/] 
+  C --> D{/Did the customer buy more than one item?/} 
+  D -- No -->E[Simply log the item bought into the spreadsheet.] 
+  E --> F([END)] 
 
-  D -- Yes --> G[Take into account how the quantity of each item/s the customer bought into spreadsheet]
-  G --> H[Log into the spreadsheet]
-  H --> F[END])
+  D -- Yes --> G[Take into account how the quantity of each item/s the customer bought into spreadsheet] 
+  G --> H[Log into the spreadsheet] 
+  H --> F[END]) 
 ```
