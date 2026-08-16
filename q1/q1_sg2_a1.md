@@ -1,27 +1,24 @@
 # Annex B: Computational Thinking Exercise - Smart Vending Machine
 
-**Section:** Balingkilat  
-**C# / Name:**   
-#7 - Cass, Lance William L.  
-#8 - Cepillo, Ryan Meiko L.    
-#9 - Coloma, Khalix D.  
-**Date:** August 12, 2026
+*Section:* Balingkilat  
+*C# / Name:* #8 - Cepillo, Ryan Meiko L.  
+*Date:* August 12, 2026
 
 ---
 
 ## Step 1: Identify the Big Problem
 
-**Main Problem:**  
+*Main Problem:*  
 The school’s vending machine is very unreliable, inefficient, and faulty resulting in poor user experience and slow service.
 
 ---
 
 ## Step 2: Identify Sub-Problems
 
-1. **Incorrect Change:** The machine miscalculates or fails to dispense the accurate change to its users.
-2. **Lack of Inventory Tracking:** Items run out without notifying staff or updating the display, causing the users to attempt to buy out-of-stock items.
-3. **User Selection Errors:** Users frequently press the wrong buttons, resulting in purchasing unintended items.
-4. **Transaction Efficiency:** The system processes requests slowly during peak usage times when multiple users use it consecutively.
+1. *Incorrect Change:* The machine miscalculates or fails to dispense the accurate change to its users.
+2. *Lack of Inventory Tracking:* Items run out without notifying staff or updating the display, causing the users to attempt to buy out-of-stock items.
+3. *User Selection Errors:* Users frequently press the wrong buttons, resulting in purchasing unintended items.
+4. *Transaction Efficiency:* The system processes requests slowly during peak usage times when multiple users use it consecutively.
 
 ---
 
@@ -29,16 +26,16 @@ The school’s vending machine is very unreliable, inefficient, and faulty resul
 
 | Sub-Problem | CT Skill | Example Solution |
 | :--- | :--- | :--- |
-| **1. Incorrect Change** | **Algorithmic Thinking** | Implement an automated change calculation routine that checks hopper coin levels before validating payment and dispenses exact currency combinations using standard change-making algorithms. |
-| **2. Lack of Inventory Tracking** | **Pattern Recognition** | Connect item slot weight/optical sensors to an online database to update stock levels in real time, lock empty slots automatically, and alert school canteen staff when stock falls below 15%. |
-| **3. User Selection Errors** | **Abstraction** | Replace the traditional keypad with a touch-screen display that shows item images, descriptions, and a final visual "Confirm Choice" prompt before initiating the purchase. |
-| **4. Transaction Efficiency** | **Decomposition** | Implement quick digital payment integrations (like RFID/student ID cards) and run sensor checks in parallel to minimize queuing times during peak school breaks. |
+| *1. Incorrect Change* | *Algorithmic Thinking* | Implement an automated change calculation routine that checks hopper coin levels before validating payment and dispenses exact currency combinations using standard change-making algorithms. |
+| *2. Lack of Inventory Tracking* | *Pattern Recognition* | Connect item slot weight/optical sensors to an online database to update stock levels in real time, lock empty slots automatically, and alert school canteen staff when stock falls below 15%. |
+| *3. User Selection Errors* | *Abstraction* | Replace the traditional keypad with a touch-screen display that shows item images, descriptions, and a final visual "Confirm Choice" prompt before initiating the purchase. |
+| *4. Transaction Efficiency* | *Decomposition* | Implement quick digital payment integrations (like RFID/student ID cards) and run sensor checks in parallel to minimize queuing times during peak school breaks. |
 
 ---
 
 ## Step 4: Draw a flowchart or write a pseudocode for the identified sub-problem
 
-### **Selected Sub-Problem:** User Selection Errors
+### *Selected Sub-Problem:* User Selection Errors
 ```mermaid
 graph TD
     A([START]) --> B[Display: Welcome! Enter Item Code]
@@ -66,8 +63,6 @@ graph TD
     L -- YES --> N[Lock Selection & Proceed to Dispense]
     N --> Z
 ```
-# If it does not render:
-![Flowchart](Flowchart.PNG)
 
 ---
 
